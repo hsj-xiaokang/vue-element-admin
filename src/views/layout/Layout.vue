@@ -1,11 +1,13 @@
 <template>
 	<div class="app-wrapper" :class="{hideSidebar:!sidebar.opened}">
-		<sidebar class="sidebar-container"></sidebar>
-		<div class="main-container">
-			<navbar></navbar>
-			<tags-view></tags-view>
-			<app-main></app-main>
-		</div>
+		  <sidebar class="sidebar-container" style="margin-top: 3.5%;"></sidebar>
+      <navbar class="nv"></navbar>
+      <breadcrumb class="breadcrumb-container"></breadcrumb>
+      <div class="main-container">
+        <!--<navbar></navbar>-->
+        <!--<tags-view></tags-view>-->
+        <app-main></app-main>
+      </div>
 	</div>
 </template>
 
@@ -36,4 +38,16 @@ export default {
 	  height: 100%;
 	  width: 100%;
 	}
+  .nv{
+    -webkit-transition: width 0.28s;
+    transition: width 0.28s;
+    width: 100% !important;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1001;
+  }
+
 </style>

@@ -2,7 +2,8 @@
   <el-menu class="navbar" mode="horizontal">
     <hamburger class="hamburger-container" :toggleClick="toggleSideBar" :isActive="sidebar.opened"></hamburger>
 
-    <breadcrumb class="breadcrumb-container"></breadcrumb>
+
+    <span style="font-size: 30px;color: #4AB7BD">vue_element_admin</span>
 
     <div class="right-menu">
       <error-log v-if="errorLogs.length>0" class="errLog-container right-menu-item" :logsList="errorLogs"></error-log>
@@ -47,6 +48,14 @@
         </el-dropdown-menu>
       </el-dropdown>
     </div>
+
+
+
+    <!--<div style="margin-left: 10.8%;margin-top:-0.3%;height:50px;background-color: white">-->
+    <!--<div style="margin-left: 2.1%;margin-top:-0.3%;height:50px;background-color: black">-->
+      <!--<breadcrumb class="breadcrumb-container"></breadcrumb>-->
+    <!--</div>-->
+
   </el-menu>
 </template>
 
@@ -57,6 +66,7 @@ import Hamburger from '@/components/Hamburger'
 import ThemePicker from '@/components/ThemePicker'
 import Screenfull from '@/components/Screenfull'
 import ErrorLog from '@/components/ErrorLog'
+// import Cookies from 'js-cookie'
 
 export default {
   components: {
@@ -77,6 +87,7 @@ export default {
   },
   methods: {
     toggleSideBar() {
+      console.log('hsj')
       this.$store.dispatch('toggleSideBar')
     },
     handleSetLanguage(lang) {
@@ -98,8 +109,9 @@ export default {
 
 <style rel="stylesheet/scss" lang="scss" scoped>
 .navbar {
-  height: 50px;
-  line-height: 50px;
+  height: 6%;
+  line-height: 300%;
+  border: 0px;
   border-radius: 0px !important;
   .hamburger-container {
     line-height: 58px;
