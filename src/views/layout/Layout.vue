@@ -1,8 +1,8 @@
 <template>
 	<div class="app-wrapper" :class="{hideSidebar:!sidebar.opened}">
-		  <sidebar class="sidebar-container" style="margin-top: 3.5%;"></sidebar>
+		  <sidebar class="sidebar-container" style="top: 3.5% !important;"></sidebar>
       <navbar class="nv"></navbar>
-      <breadcrumb class="breadcrumb-container"></breadcrumb>
+      <!--<breadcrumb class="breadcrumb-container"></breadcrumb>-->
       <div class="main-container">
         <!--<navbar></navbar>-->
         <!--<tags-view></tags-view>-->
