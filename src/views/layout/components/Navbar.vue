@@ -1,18 +1,16 @@
 <template>
-  <el-menu class="navbar" mode="horizontal">
+  <el-menu class="navbar" mode="horizontal" >
+
     <hamburger class="hamburger-container" :toggleClick="toggleSideBar" :isActive="sidebar.opened"></hamburger>
-
-
-    <span style="font-size: 30px;color: #4AB7BD">vue_element_admin</span>
-
-    <div class="right-menu">
-      <error-log v-if="errorLogs.length>0" class="errLog-container right-menu-item" :logsList="errorLogs"></error-log>
+    <breadcrumb class="breadcrumb-container"></breadcrumb>
+    <!--<div class="right-menu">
+      <error-log v-if="errorLogs.length>0" style="margin-top: 3%" class="errLog-container right-menu-item" :logsList="errorLogs"></error-log>
 
       <el-tooltip effect="dark" content="全屏" placement="bottom">
         <screenfull class="screenfull right-menu-item"></screenfull>
       </el-tooltip>
 
-      <el-dropdown trigger="click" class='international' @command="handleSetLanguage">
+      <el-dropdown trigger="click" class='international' style="margin-top: 5.5%" @command="handleSetLanguage">
         <div>
           <svg-icon class-name='right-menu-item international-icon' icon-class="language" />
         </div>
@@ -47,14 +45,10 @@
           </el-dropdown-item>
         </el-dropdown-menu>
       </el-dropdown>
+
     </div>
+-->
 
-
-
-    <!--<div style="margin-left: 10.8%;margin-top:-0.3%;height:50px;background-color: white">-->
-    <!--<div style="margin-left: 2.1%;margin-top:-0.3%;height:50px;background-color: black">-->
-      <!--<breadcrumb class="breadcrumb-container"></breadcrumb>-->
-    <!--</div>-->
 
   </el-menu>
 </template>
@@ -110,7 +104,7 @@ export default {
 <style rel="stylesheet/scss" lang="scss" scoped>
 .navbar {
   height: 6%;
-  line-height: 300%;
+  /*line-height: 300%;*/
   border: 0px;
   border-radius: 0px !important;
   .hamburger-container {

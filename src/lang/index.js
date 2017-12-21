@@ -7,7 +7,7 @@ import enLocale from './en'
 import zhLocale from './zh'
 
 Vue.use(VueI18n)
-
+// 路由的title
 const messages = {
   en: {
     ...enLocale,

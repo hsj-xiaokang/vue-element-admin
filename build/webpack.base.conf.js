@@ -2,6 +2,7 @@
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
+// var webpack=require('webpack');
 const vueLoaderConfig = require('./vue-loader.conf')
 
 function resolve (dir) {
@@ -97,5 +98,9 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
     child_process: 'empty'
-  }
+  },
+  // plugins: [
+    //国际化
+    // new webpack.NormalModuleReplacementPlugin(/element-ui[\/\\]lib[\/\\]locale[\/\\]lang[\/\\]zh-CN/, 'element-ui/lib/locale/lang/en')
+  // ]
 }

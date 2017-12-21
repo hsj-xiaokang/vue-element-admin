@@ -1,5 +1,5 @@
 <template>
-  <section class="app-main" style="min-height: 100%;margin-top: 5.0%">
+  <section class="app-main" style="min-height: 100%;margin-top: 4.0%;">
     <transition name="fade" mode="out-in">
       <keep-alive :include="cachedViews">
         <router-view></router-view>
