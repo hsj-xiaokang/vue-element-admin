@@ -18,6 +18,8 @@ import './icons' // icon
 import './errorLog'// error log
 import './permission' // permission control
 import './mock' // simulation data generator
+// http://www.jb51.net/article/118792.htm 【仅仅IE11可用】
+import 'babel-polyfill'
 
 import * as filters from './filters' // global filter
 
