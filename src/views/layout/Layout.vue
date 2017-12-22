@@ -1,6 +1,6 @@
 <template>
 	<div class="app-wrapper" :class="{hideSidebar:!sidebar.opened}">
-    <sidebar class="sidebar-container" style="top: 3.2% !important;"></sidebar>
+    <sidebar class="sidebar-container" style="top: 45px !important;"></sidebar>
     <div class="nv" style="width: 100%;height: 45px;background-color: rgb(48,65,86)">
         <div style="margin-top: 0.5%;margin-left: 2%;color: white;">
           <div class="denglu" style="display: inline-block">
@@ -36,7 +36,7 @@
           </div>
         </div>
     </div>
-      <div class="main-container" style="margin-top: 3.5%">
+      <div class="main-container" style="margin-top: 45px">
         <navbar></navbar>
         <tags-view></tags-view>
         <app-main></app-main>
