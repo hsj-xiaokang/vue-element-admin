@@ -163,6 +163,10 @@
 
 ```
 
+```
+国际化：http://blog.csdn.net/lyqhn2012/article/details/73480256
+```
+
 ## Changelog
 Detailed changes for each release are documented in the [release notes](https://github.com/PanJiaChen/vue-element-admin/releases).
 

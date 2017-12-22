@@ -43,7 +43,9 @@ export default {
     exportZip: 'Zip',
     theme: 'Theme',
     clipboardDemo: 'Clipboard',
-    i18n: 'I18n',
-    test: 'hsj'
+    i18n: 'I18n'
+  },
+  selfText: {
+    editImge: 'edit imge--heshengjn-test'
   }
 }

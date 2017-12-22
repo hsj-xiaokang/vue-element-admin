@@ -15,6 +15,7 @@
 
 <script>
 // import { getToken } from 'api/qiniu'
+import { selfi18n } from '@/utils/i18n'
 
 export default {
   name: 'editorSlideUpload',
@@ -32,11 +33,13 @@ export default {
     }
   },
   methods: {
+    selfi18n,
     checkAllSuccess() {
       return Object.keys(this.listObj).every(item => this.listObj[item].hasSuccess)
     },
     handleSubmit() {
-      this.$confirm('test', 'test', {
+      // http://localhost:8088/#/components/tinymce     http://blog.csdn.net/lyqhn2012/article/details/73480256
+      this.$confirm(this.selfi18n('editImge'), this.selfi18n('editImge'), {
         type: 'warning'
       }).then(() => {
       }).catch(() => {

@@ -43,7 +43,9 @@ export default {
     exportZip: 'zip',
     theme: '换肤',
     clipboardDemo: 'clipboard',
-    i18n: '国际化',
-    test: '何胜金'
+    i18n: '国际化'
+  },
+  selfText: {
+    editImge: '图片编辑--何胜金-测试'
   }
 }
