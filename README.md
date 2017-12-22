@@ -167,6 +167,14 @@
 国际化：http://blog.csdn.net/lyqhn2012/article/details/73480256
 ```
 
+```
+IE 11 10 9 兼容问题  
+1.使用babel-polyfill
+2.webpack-dev-server 换成2.6.1
+https://segmentfault.com/q/1010000009842756
+http://www.jb51.net/article/118792.htm
+```
+
 ## Changelog
 Detailed changes for each release are documented in the [release notes](https://github.com/PanJiaChen/vue-element-admin/releases).
 
