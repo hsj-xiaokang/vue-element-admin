@@ -180,10 +180,72 @@ http://www.jb51.net/article/118792.htm
 ```
 
 ```
-http://serve.3ezy.com/blog.csdn.net/mimikuer/article/details/77164798
-
+vue_cli代理 不是Nginx
 https://www.jianshu.com/p/95b2caf7e0da
 "http-proxy-middleware": "0.17.4"
+
+eg:
+// see http://vuejs-templates.github.io/webpack for documentation.
+var path = require('path')
+
+module.exports = {
+  build: {
+    ...
+  },
+  dev: {
+    env: require('./dev.env'),
+    port: 9527,
+    autoOpenBrowser: true,
+    assetsSubDirectory: 'static',
+    assetsPublicPath: '/',
+    staticPath: '/static/',
+    proxyTable: {
+      '/trc-service-enterprise': {
+        target: 'http://xx.xx.xx:7010',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/trc-service-enterprise': 'trc-service-enterprise/'
+        }
+      },
+      '/trc-service-product': {
+        target: 'http://xx.xx.xx:7010',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/trc-service-product': 'trc-service-product/'
+        }
+      },
+      '/trc-service-report': {
+        target: 'http://xx.xx.xx:7010',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/trc-service-report': 'trc-service-report/'
+        }
+      },
+      '/trc-service-system': {
+        target: 'http://xx.xx.xx:7010',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/trc-service-system': 'trc-service-system/'
+        }
+      },
+      '/ipr-service-sys': {
+        target: 'http://xx.xx.xx:7010',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/ipr-service-sys': 'ipr-service-sys/'
+        }
+      },
+        '/acp-web-monitor': {
+            target: 'http://xx.xx.xx:7010',
+            changeOrigin: true,
+            pathRewrite: {
+                '^/acp-web-monitor': 'acp-web-monitor/'
+            }
+        },
+    },
+  }
+}
+
 ```
 
 ## Changelog
