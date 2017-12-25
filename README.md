@@ -175,6 +175,10 @@ https://segmentfault.com/q/1010000009842756
 http://www.jb51.net/article/118792.htm
 ```
 
+```
+路由传递参数：https://www.cnblogs.com/itbainianmei/p/6257357.html
+```
+
 ## Changelog
 Detailed changes for each release are documented in the [release notes](https://github.com/PanJiaChen/vue-element-admin/releases).
 
